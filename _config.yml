@@ -97,7 +97,7 @@ author:
   name             : "Kim Hangil"
   avatar           : "/assets/images/logo.png"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "데이터와 커뮤니티 기반 학습에 관심 있습니다."
-  location         : "Somewhere"
+  location         : #"Somewhere"
   email            :
   links:
     - label: "Email"
