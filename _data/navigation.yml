@@ -3,10 +3,14 @@ main:
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Category"
-    url: "/categories/"
+    url: "/category-archive/"
   - title: "Archive"
     url: /year-archive/
-  - title: "Sample Collections"
+  - title: "Collections"
     url: /collection-archive/
+  - title: "portfolio"
+    url: /portfolio-archive/
+  - title: "tag"
+    url: /tag-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
