@@ -9,8 +9,8 @@ main:
   #- title: "Collections"
   #  url: /collection-archive/
   #- title: "portfolio"
-    url: /portfolio-archive/
-  - title: "tag"
-    url: /tag-archive/
+  #  url: /portfolio-archive/
+  #- title: "tag"
+  #  url: /tag-archive/
   #- title: "Sitemap"
   #   url: /sitemap/
