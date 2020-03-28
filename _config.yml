@@ -19,7 +19,7 @@ locale                   : "ko-KR" #en-US
 title                    : "In 3years..."
 title_separator          : "-"
 subtitle                 : "오늘을 살며 내일을 봅니다." # site tagline that appears below site title in masthead
-name                     : "Kim Hangil"
+name                     : "김한길"
 description              : ""
 url                      : "https://uoneway.github.io"# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : ""# the subpath of your site, e.g. "/blog"
@@ -114,7 +114,7 @@ author:
       url: "https://www.facebook.com/hangil.kim.75"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/uoneway"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -127,10 +127,10 @@ footer:
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url: "https://www.facebook.com/hangil.kim.75"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      # url: "https://github.com/uoneway"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -140,6 +140,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:uoneway@gmail.com
 
 
 # Reading Files
@@ -284,3 +287,15 @@ defaults:
       toc_label: "Table of Contents"
       toc_icon: "list"
       toc_sticky: true
+      
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: true
+      related: false
