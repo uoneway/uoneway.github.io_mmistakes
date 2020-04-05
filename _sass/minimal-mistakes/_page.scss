@@ -77,6 +77,10 @@ body {
   }
 }
 
+.page__date {
+  font-size: $type-size-6; 
+}
+
 .page__lead {
   font-family: $global-font-family;
   font-size: $type-size-4;

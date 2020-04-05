@@ -3,7 +3,7 @@ main:
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "NLP"
-    url: /categories/#nlp/
+    url: /categories/nlp/
     #description: "Natural Language Processing"
   #- title: "Category"
   #  url: /categories/
