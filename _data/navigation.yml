@@ -17,3 +17,21 @@ main:
   #  url: /tag-archive/
   #- title: "Sitemap"
   #   url: /sitemap/
+
+# Custom sidebar navigation menuPermalink
+  nlp:
+  - title: 자연어 처리란
+    children:
+      - title: "Quick-Start Guide"
+        url: /nlp/kakao-rubics/
+      - title: "Structure"
+        url: /docs/structure/
+      - title: "Installation"
+        url: /docs/installation/
+      - title: "Upgrading"
+        url: /docs/upgrading/
+
+  - title: Customization
+    children:
+      - title: "Configuration"
+        url: /docs/configuration/
