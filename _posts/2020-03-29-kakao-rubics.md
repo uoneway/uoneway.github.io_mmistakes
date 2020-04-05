@@ -1,6 +1,7 @@
 ---
 title: "카카오 추천 엔진, 루빅스를 까봅시다"
-layout: post
+subtitle: 
+#layout: post
 categories: nlp
 tags: recommend kakao rubics
 last_modified_at: 2020-03-30 08:26:28
@@ -12,7 +13,7 @@ last_modified_at: 2020-03-30 08:26:28
 - 루빅스는 성별&연령별 메인 뉴스의 이용자 반응을 실시간으로 측정하여 해당 그룹별로 클릭률이 높은 뉴스기사를 보여줍니다.
 - 만약 이용자 집단을 알 수 없는 사용자라면 전체 이용자 경험을 분석해 가장 많이 본 기사를 우선 배치합니다.
 
-![../assets/images/2020-03-29-kakao-rubics/Untitled.png](../assets/images/2020-03-29-kakao-rubics/Untitled.png)
+![/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled.png](/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled.png)
 
 과연 어떤 방법으로 이러한 개인화 추천 서비스를 제공할 수 있을까요? 함께 살펴봅시다! 
 
@@ -67,7 +68,7 @@ last_modified_at: 2020-03-30 08:26:28
 왜 Multi-Armed Bandit인가?
 슬롯머신은 그 모양때문에 흔히 외팔이 강도(One-Armed Bandit)라고 불립니다. 또한 카지노에서 여러 대의 슬롯머신이 있는 상황을 가정하고 있어 앞에 multi가 붙었습니다.
 
-![../assets/images/2020-03-29-kakao-rubics/Untitled%201.png](../assets/images/2020-03-29-kakao-rubics/Untitled%201.png)
+![/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%201.png](/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%201.png)
 
 ### 어떤 전략을 짜야 돈을 많이 딸 수 있을까요?
 
@@ -104,7 +105,7 @@ last_modified_at: 2020-03-30 08:26:28
 
 - (MAB) 승률 변동 없음 / (뉴스) 시간이 경과 할수록 클릭률이 떨어지는 경향 존재
 
-    ![../assets/images/2020-03-29-kakao-rubics/Untitled%202.png](../assets/images/2020-03-29-kakao-rubics/Untitled%202.png)
+    ![/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%202.png](/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%202.png)
 
 - (MAB) 머신의 개수와 종류는 변하지 않음 / (뉴스) 추천 목록이 끊임없이 바뀜
 * 다음 모바일 뉴스 화면에는 20개 내외의 뉴스만 노출 가능
@@ -125,13 +126,13 @@ last_modified_at: 2020-03-30 08:26:28
 
     이를 통해 클릭어뷰징에 따라 편차가 클 수 있는 CTR의 특성을 보완할 수 있습니다.
 
-![../assets/images/2020-03-29-kakao-rubics/Untitled%203.png](../assets/images/2020-03-29-kakao-rubics/Untitled%203.png)
+![/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%203.png](/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%203.png)
 
 ### 뉴스 CTR 특성 두 번째: 뉴스 위치에 따라 변한다(Positional Bias)
 
 뉴스 CTR은 아래 표에서 보듯이 화면의 어느 위치에 뉴스가 노출되는지에 따라 동일한 뉴스라도 상당히 다른 CTR을 얻게됩니다.
 
-![../assets/images/2020-03-29-kakao-rubics/Untitled%204.png](../assets/images/2020-03-29-kakao-rubics/Untitled%204.png)
+![/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%204.png](/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%204.png)
 
 우선 생각해볼 수 있는 대안은 뉴스 위치에 따라 가중치를 부여하는 방식입니다. 즉 최상단에 배치된 뉴스들이 가장 아래 배치된 뉴스보다 클릭률이 평균적으로 얼마나 증가하는지를 측정하여 결과값을 이 수치로 보정해주는 것입니다. 하지만 CTR이라는 수치는 위치 외에도 뉴스의 품질, 함께 제공되는 다른 뉴스들의 CTR 등 수많은 외부요인에 영향을 받기에 정확한 positional bias 크기를 측정하기 어려웠고 당연히 유의미한 성과로 이어지지 못했습니다.
 
@@ -174,7 +175,7 @@ last_modified_at: 2020-03-30 08:26:28
 - Training:  중 특정 시점 t 이전 데이터를 training set으로 설정하고 훈련
 - Test: 특정 시점 t 이후에 로그가 있는 이용자 중 training set에 적어도 한 개의 로그가 존재하는(즉 뉴스를 읽은 기록이 있는) 이용자 로그만을 이용. 이용자가 뉴스를 소비한 시간에 제공된 뉴스 중 모델이 추천한 뉴스와 해당 이용자가 실제 읽은 뉴스가 얼마나 겹치는지 파악 (추천 성공률, Hit ratio)
 
-![../assets/images/2020-03-29-kakao-rubics/Untitled%205.png](../assets/images/2020-03-29-kakao-rubics/Untitled%205.png)
+![/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%205.png](/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%205.png)
 
 왜 특정 시점을 기준으로 set을 나눴을까?
 보통 머신러닝에서 모델을 훈련하고 테스트 할 때는, 데이터 셋을 나눌 때 두 데이터가 균질하도록 나누는 것을 중요하게 여깁니다. 
@@ -198,11 +199,11 @@ last_modified_at: 2020-03-30 08:26:28
 
 한 마디로 모든 면에서 좋아졌습니다.
 
-![../assets/images/2020-03-29-kakao-rubics/Untitled%206.png](../assets/images/2020-03-29-kakao-rubics/Untitled%206.png)
+![/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%206.png](/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%206.png)
 
-![../assets/images/2020-03-29-kakao-rubics/Untitled%207.png](../assets/images/2020-03-29-kakao-rubics/Untitled%207.png)
+![/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%207.png](/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%207.png)
 
-![../assets/images/2020-03-29-kakao-rubics/Untitled%208.png](../assets/images/2020-03-29-kakao-rubics/Untitled%208.png)
+![/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%208.png](/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%208.png)
 
 뉴스 다양성 또한 증가했습다. 다음 모바일 서비스를 통해 한 번이라도 노출된 뉴스의 양이 250% 증가한 것입니다. 이는  기존의 뉴스 서비스에서는 범용성이 떨어져 배제됐던 뉴스들도 특정 이용자군만이 좋아하는 뉴스도 그 소비자에게는 제공 될 수 있는 여지가 커졌기 때문입니다.
 
@@ -218,15 +219,15 @@ last_modified_at: 2020-03-30 08:26:28
 
 아래 그래프에서 모바일 다음의 뉴스/연예 스포츠 기사의 본문 길이에 따른 체류 시간을 살펴보면 상관관계가 있음을 알 수 있습니다. 따라서 '사용자가 콘텐츠 본문을 열심히 읽은 정도'를 측정하기 위해서는 체류 시간에서 본문 길이에 따른 영향력을 제거해야합니다. 따라서 DRI는 이 본문 길이에 따른 기대 체류 시간 대비 해당 콘텐츠의 체류 시간의 상대적인 크기로 정의합니다. 
 
-![../assets/images/2020-03-29-kakao-rubics/Untitled%209.png](../assets/images/2020-03-29-kakao-rubics/Untitled%209.png)
+![/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%209.png](/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%209.png)
 
 루빅스는 2017년 9월부터  '승률'을 측정하는 기준을 CTR이 아닌 'DRI의 총합'으로 수정 적용했습니다. DRI 총합은 결국 DRI와 CTR를 합친 DRI-CTR 앙상블에 기반한 방식입니다. 이는 체류시간의 간접적인 증가를 기대할 수 있음과 동시에 이는 제목과 본문에 대한 사용자 반응을 모두 반영했다는 의의를 지닌다.
 
-![../assets/images/2020-03-29-kakao-rubics/Untitled%2010.png](../assets/images/2020-03-29-kakao-rubics/Untitled%2010.png)
+![/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%2010.png](/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%2010.png)
 
 그 결과 끌리는 제목을 가진 기사들이 상대적으로 적게 추천되기 때문에 '1인당 평균 페이지뷰(pageview)'가 소폭 하락하기도 합니다. 그러나, 사용자들이 보다 열심히 읽을만한 기사를 제공해 주기 때문에 "1뷰(view) 당 평균 체류 시간"이 상승하여, 결과적으로는 '1인당 평균 체류 시간'이 상승했다. DRI-CTR 앙상블 기반 추천 랭킹을 통해, 제목과 본문에 대한 사용자의 반응을 모두 기사 추천에 반영할 수 있게 되었으며, 더불어 총 체류시간도 증가하게 되는 것이다.
 
-![../assets/images/2020-03-29-kakao-rubics/Untitled%2011.png](../assets/images/2020-03-29-kakao-rubics/Untitled%2011.png)
+![/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%2011.png](/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%2011.png)
 
 [열독률 적용한 카카오 추천 알고리즘, 그 결과는?](https://brunch.co.kr/@kakao-it/212)
 
@@ -242,7 +243,7 @@ last_modified_at: 2020-03-30 08:26:28
 
 토로스 또한 MAB 알고리즘(Thomson Sampling)을 사용하고 있습니다. 하지만 모든 뉴스를 우선 노출시킨 후 MAB로 수정해나가는 루빅스에 반해, 토로스는 CF, CBF, 통계모델, 일반적 기계학습 모델 등 다양한 모델에서 나온 추천결과를 앙상블하여 하나의 추천결과로 병합하여 보여준 후, 이를 MAB로 수정해나간다는 점이 가장 큰 차이점입니다.
 
-![../assets/images/2020-03-29-kakao-rubics/Untitled%2012.png](../assets/images/2020-03-29-kakao-rubics/Untitled%2012.png)
+![/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%2012.png](/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%2012.png)
 
 [[카카오AI리포트]내 손안의 AI 비서, 추천 알고리듬](https://brunch.co.kr/@kakao-it/72)
 
@@ -256,7 +257,7 @@ last_modified_at: 2020-03-30 08:26:28
         - 하지만 루빅스에도 개인 단위 추천 기능도 포함되어 있는것으로 보임
         [https://brunch.co.kr/@kakao-it/136](https://brunch.co.kr/@kakao-it/136)
 
-            ![../assets/images/2020-03-29-kakao-rubics/Untitled%2013.png](../assets/images/2020-03-29-kakao-rubics/Untitled%2013.png)
+            ![/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%2013.png](/assets/images/2020-03-31-카카오-추천-엔진-루빅스를-까봅시다/Untitled%2013.png)
 
 - 하지만 서비스 상황에 맞는 알고리즘을 선정하고, 이를 변경하는 프로세스는 큰 도움이 됐습니다. 무조건 최신 알고리즘, 멋져보이는 알고리즘을 적용해보려고 하는 것을 주의해야 겠습니다.
 - 성별/연령별 집단으로 구분하는게 정말 유의미할까?
