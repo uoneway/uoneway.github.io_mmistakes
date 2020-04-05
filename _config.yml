@@ -318,7 +318,7 @@ defaults:
     values:
       sidebar:
         nav: "nlp" # nav: "nlp" references the docs key in _data/navigation.yml
-      #layout: single
+      layout: category
       author_profile: false
       read_time: true
       comments: true
