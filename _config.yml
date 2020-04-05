@@ -276,7 +276,6 @@ collections:
   nlp:
     output: true
     permalink: /categories/:categories/:title/
-    collections_dir: nlp
   recommend:
     output: true
   dev:
