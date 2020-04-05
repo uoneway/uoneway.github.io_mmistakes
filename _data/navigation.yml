@@ -19,7 +19,7 @@ main:
   #   url: /sitemap/
 
 # Custom sidebar navigation menuPermalink
-  nlp:
+nlp:
   - title: 자연어 처리란
     children:
       - title: "Quick-Start Guide"
