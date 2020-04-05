@@ -1,12 +1,9 @@
 ---
 title: "카카오 추천 엔진, 루빅스를 까봅시다"
 subtitle: 
-#layout: post
 categories: nlp
 tags: recommend kakao rubics
 last_modified_at: 2020-03-30 08:26:28
-sidebar:
-  nav: "nlp"
 ---
 카카오는 2015년 6월, 국내 인터넷 업계 최초로 모바일다음 뉴스 메인화면에 인공지능 추천 엔진을 적용했습니다. 여기에 적용된 추천 엔진이 바로 루빅스(RUBICS)입니다. 
 

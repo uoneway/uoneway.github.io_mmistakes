@@ -293,13 +293,13 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: true
       comments: true
       share: false
       related: true
       toc: true
-      toc_label: "Table of Contents"
+      toc_label: " Table of Contents"
       toc_icon: "list"
       toc_sticky: true
       
@@ -315,17 +315,21 @@ defaults:
       share: true
       related: false
 
-  # _portfolio
+ # _nlp
   - scope:
       path: ""
-      type: portfolio
+      type: nlp #type 값으로는 pages, posts, drafts 또는 사이트 내의 컬렉션 이름을 사용할 수 있습니다.
+    values:
+      sidebar:
+        nav: "nlp" # nav: "nlp" references the docs key in _data/navigation.yml
     values:
       layout: single
+      author_profile: true
       read_time: true
       comments: true
       share: false
       related: false
       toc: true
-      toc_label: "Table of Contents"
+      toc_label: " Table of Contents"
       toc_icon: "list"
       toc_sticky: true
