@@ -275,7 +275,7 @@ compress_html:
 collections:
   nlp:
     output: true
-    permalink: /:collection/:name/
+    #permalink: /:collection/:name/
     sidebar:
       nav: "nlp"
   recommend:
