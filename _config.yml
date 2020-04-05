@@ -276,8 +276,7 @@ collections:
   nlp:
     output: true
     permalink: /categories/:categories/:title/
-    sidebar:
-        nav: "nlp" # nav: "nlp" references the docs key in _data/navigation.yml
+    collections_dir: nlp
   recommend:
     output: true
   dev:
@@ -316,7 +315,7 @@ defaults:
  # _nlp
   - scope:
       path: ""
-      type: nlp #type 값으로는 pages, posts, drafts 또는 사이트 내의 컬렉션 이름(이 파일 위에)을 사용할 수 있습니다.
+      type: nlp #type 값으로는 pages, posts, drafts 또는 사이트 내의 컬렉션 이름(이 파일 위에)을 사용할 수 있습니다. 이 type은 메인에 _type명 폴더가 만들어져 있을 때 그 안에 내용물 본다는 얘기임
     values:
       sidebar:
         nav: "nlp" # nav: "nlp" references the docs key in _data/navigation.yml
