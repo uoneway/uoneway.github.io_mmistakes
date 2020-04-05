@@ -4,7 +4,7 @@ main:
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "NLP"
     url: /nlp/
-    description: "Natural Language Processing"
+    #description: "Natural Language Processing"
   - title: "Category"
     url: /category-archive/
   - title: "Archive"
