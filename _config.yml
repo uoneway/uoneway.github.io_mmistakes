@@ -276,6 +276,8 @@ collections:
   nlp:
     output: true
     permalink: /categories/:categories/:title/
+    sidebar:
+        nav: "nlp" # nav: "nlp" references the docs key in _data/navigation.yml
   recommend:
     output: true
   dev:
@@ -318,8 +320,8 @@ defaults:
     values:
       sidebar:
         nav: "nlp" # nav: "nlp" references the docs key in _data/navigation.yml
-      layout: single
-      author_profile: false
+      #layout: single
+      #author_profile: false
       read_time: true
       comments: true
       share: false
