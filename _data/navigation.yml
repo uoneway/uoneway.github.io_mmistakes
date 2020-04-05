@@ -2,12 +2,15 @@
 main:
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "NLP"
+    url: /nlp/
+    description: "Natural Language Processing"
   - title: "Category"
     url: /category-archive/
   - title: "Archive"
     url: /year-archive/
-  #- title: "Collections"
-  #  url: /collection-archive/
+  - title: "Collections"
+    url: /collection-archive/
   #- title: "portfolio"
   #  url: /portfolio-archive/
   #- title: "tag"

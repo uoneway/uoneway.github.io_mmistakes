@@ -63,10 +63,10 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification : "google4c13c9f1db67ee9b"
-bing_site_verification   :
+google_site_verification : "4c13c9f1db67ee9b"
+bing_site_verification   : 
 yandex_site_verification :
-naver_site_verification  :
+naver_site_verification  : "1dfec98c9adfd8ba619449e2c8a98f1d"
 
 # Social Sharing
 twitter:
@@ -130,7 +130,7 @@ footer:
       url: "https://www.facebook.com/hangil.kim.75"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/uoneway"
+      url: "https://github.com/uoneway"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
