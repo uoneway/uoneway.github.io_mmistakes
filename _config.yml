@@ -246,7 +246,7 @@ whitelist:
 #  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
-  path: /categoriess/
+  path: /categories/ # breadcrumbs에서 기본 url을 이걸 받아감
 tag_archive:
   type: liquid
   path: /tags/

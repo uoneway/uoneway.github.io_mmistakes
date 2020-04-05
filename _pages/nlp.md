@@ -1,6 +1,6 @@
 ---
 title: "NLP"
-layout: categories
-permalink: /categories/nlp/
+layout: category
+permalink: /categories/#nlp/
 author_profile: true
 ---
