@@ -275,7 +275,7 @@ compress_html:
 collections:
   nlp:
     output: true
-    permalink: categories/:categories/:title/
+    permalink: /categories/:categories/:title/
   recommend:
     output: true
   dev:
