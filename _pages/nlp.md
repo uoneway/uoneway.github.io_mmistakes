@@ -1,7 +1,7 @@
 ---
 title: NLP
 permalink: /nlp/
-layout: collection
+layout: category
 comments: false
 share: true
 related: false
