@@ -2,7 +2,6 @@
 title: NLP
 permalink: /nlp/
 layout: collection
-author_profile: true
 comments: false
 share: true
 related: false

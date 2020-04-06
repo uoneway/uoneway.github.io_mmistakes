@@ -5,10 +5,12 @@ main:
   - title: "NLP"
     url: /nlp/
     description: "Natural Language Processing"
-  #- title: "Category"
-  #  url: /categories/
   - title: "Posts"
     url: /year-archive/
+  - title: "About"
+    url: /about/
+  #- title: "Category"
+  #  url: /categories/
   #- title: "Collections"
   #  url: /collection-archive/
   #- title: "portfolio"

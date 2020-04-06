@@ -97,6 +97,7 @@ author:
   name             : "Kim Hangil"
   avatar           : "/assets/images/logo.png"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "데이터와 커뮤니티 기반 학습에 관심 있습니다."
+  home             : "/about/"
   location         : #"Somewhere"
   email            :
   links:
@@ -296,7 +297,7 @@ defaults:
       share: false
       related: true
       toc: true
-      toc_label: " Table of Contents"
+      toc_label: "Table of Contents"
       toc_icon: "list"
       toc_sticky: true
       
@@ -326,6 +327,6 @@ defaults:
       share: false
       related: false
       toc: true
-      toc_label: " Table of Contents"
+      toc_label: "Table of Contents"
       toc_icon: "list"
       toc_sticky: true
