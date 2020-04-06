@@ -317,7 +317,7 @@ defaults:
  # _nlp
   - scope:
       path: "/nlp/*" # url이 아닌 실제 폴더 기준으로 적어줘야 하는듯
-      #type: posts
+      #type: posts # 메인페이지도 적용시켜 주려고 type 지정 안해줌
     values:
       sidebar:
         nav: "nlp" # nav: "nlp" references the docs key in _data/navigation.yml
