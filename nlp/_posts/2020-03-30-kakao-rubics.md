@@ -1,7 +1,6 @@
 ---
 title: "카카오 추천 엔진, 루빅스를 까봅시다"
 subtitle: 
-categories: nlp
 tags: recommend kakao rubics
 last_modified_at: 2020-03-30 08:26:28
 featured: true
