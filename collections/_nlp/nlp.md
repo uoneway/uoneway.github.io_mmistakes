@@ -1,5 +1,6 @@
 ---
 title: "NLP"
 permalink: /categories/nlp/
-layout: category
+layout: collection
 ---
+NLP 콜렉션입니다.
